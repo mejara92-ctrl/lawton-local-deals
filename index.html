@@ -9,7 +9,6 @@
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -21,12 +20,12 @@
     a { color: inherit; text-decoration: none; }
 
     .navbar {
-      min-height: 92px;
+      min-height: 84px;
       background: #030303;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 48px;
+      padding: 0 42px;
       border-bottom: 1px solid #222;
       position: sticky;
       top: 0;
@@ -35,7 +34,7 @@
 
     .logo {
       font-weight: 900;
-      font-size: 24px;
+      font-size: 23px;
       line-height: .95;
       letter-spacing: 1px;
     }
@@ -44,54 +43,44 @@
 
     nav {
       display: flex;
-      gap: 28px;
+      gap: 26px;
       text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 800;
+      font-size: 13px;
+      font-weight: 900;
     }
 
-    nav a:hover,
-    nav a.active { color: #ef233c; }
+    nav a:hover { color: #ef233c; }
 
     .btn {
       display: inline-block;
-      padding: 14px 24px;
-      border-radius: 6px;
+      padding: 13px 22px;
+      border-radius: 7px;
       font-weight: 900;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 13px;
     }
 
-    .btn-red {
-      background: #ef233c;
-      color: white;
-    }
-
-    .btn-outline {
-      border: 1px solid #fff;
-      color: white;
-    }
+    .btn-red { background: #ef233c; color: white; }
+    .btn-outline { border: 1px solid #fff; color: white; }
 
     .hero {
-      min-height: 430px;
-      padding: 70px 58px;
+      padding: 80px 58px;
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: 1.1fr .9fr;
       align-items: center;
       gap: 40px;
       background:
-        linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.72)),
+        linear-gradient(90deg, rgba(0,0,0,.96), rgba(0,0,0,.7)),
         url("https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1800&q=80");
       background-size: cover;
       background-position: center;
     }
 
     .hero h1 {
-      font-size: clamp(38px, 5vw, 62px);
-      line-height: 1.05;
+      font-size: clamp(40px, 5vw, 66px);
+      line-height: 1.03;
       text-transform: uppercase;
-      margin-bottom: 22px;
-      letter-spacing: 1px;
+      margin-bottom: 20px;
     }
 
     .hero h1 span { color: #ef233c; }
@@ -99,45 +88,50 @@
     .hero p {
       font-size: 20px;
       color: #ddd;
-      max-width: 640px;
+      max-width: 660px;
       line-height: 1.5;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .hero-actions {
       display: flex;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
     }
 
-    .hero-icons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      text-align: center;
+    .hero-card {
+      border: 1px solid #333;
+      background: rgba(10,10,10,.82);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.45);
     }
 
-    .hero-icons div {
-      border-left: 1px solid #333;
-      padding: 20px;
-    }
-
-    .hero-icons .icon {
-      font-size: 44px;
-      margin-bottom: 12px;
-    }
-
-    .hero-icons strong {
-      font-size: 15px;
+    .hero-card h2 {
+      font-size: 26px;
       text-transform: uppercase;
-      line-height: 1.4;
+      margin-bottom: 14px;
     }
 
-    .deals {
-      margin: 0 24px;
-      padding: 28px 18px 22px;
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      color: #ddd;
+      font-weight: 700;
+    }
+
+    .hero-card li::before {
+      content: "✓ ";
+      color: #ef233c;
+      font-weight: 900;
+    }
+
+    .section {
+      margin: 24px;
+      padding: 28px 20px;
       border: 1px solid #252525;
-      border-radius: 10px;
+      border-radius: 12px;
       background: linear-gradient(#111, #0b0b0b);
     }
 
@@ -145,35 +139,33 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
-      gap: 16px;
+      gap: 18px;
+      margin-bottom: 22px;
     }
 
     .section-top h2 {
-      font-size: 26px;
+      font-size: 28px;
       text-transform: uppercase;
     }
 
-    .section-top a {
-      color: #ef233c;
-      font-weight: 900;
-      text-transform: uppercase;
-      font-size: 14px;
+    .section-top p {
+      color: #aaa;
+      margin-top: 6px;
     }
 
     .filters {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 22px;
     }
 
-    .filter-btn {
+    .filter-btn,
+    .view-btn {
       background: #181818;
       color: #fff;
       border: 1px solid #333;
-      padding: 10px 14px;
-      border-radius: 6px;
+      padding: 11px 15px;
+      border-radius: 7px;
       font-weight: 900;
       text-transform: uppercase;
       cursor: pointer;
@@ -181,34 +173,35 @@
     }
 
     .filter-btn.active,
-    .filter-btn:hover {
+    .filter-btn:hover,
+    .view-btn:hover {
       background: #ef233c;
       border-color: #ef233c;
     }
 
     .deal-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
     .card {
       background: #181818;
       border: 1px solid #333;
-      border-radius: 9px;
+      border-radius: 13px;
       overflow: hidden;
       position: relative;
-      box-shadow: 0 10px 25px rgba(0,0,0,.3);
+      box-shadow: 0 10px 28px rgba(0,0,0,.35);
       display: flex;
       flex-direction: column;
+      min-height: 430px;
     }
 
     .card img {
       width: 100%;
-      height: 190px;
+      height: 210px;
       object-fit: cover;
       display: block;
-      filter: saturate(1.05) contrast(1.05);
     }
 
     .badge {
@@ -216,9 +209,9 @@
       top: 14px;
       left: 14px;
       background: #ef233c;
-      padding: 10px 16px;
-      border-radius: 4px;
-      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
       font-weight: 900;
       z-index: 2;
     }
@@ -227,25 +220,25 @@
       position: absolute;
       top: 14px;
       right: 14px;
-      background: rgba(0,0,0,.75);
+      background: rgba(0,0,0,.78);
       border: 1px solid #444;
       padding: 8px 10px;
-      border-radius: 4px;
-      font-size: 12px;
+      border-radius: 5px;
+      font-size: 11px;
       font-weight: 900;
       text-transform: uppercase;
       z-index: 2;
     }
 
     .card-body {
-      padding: 18px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
 
     .card h3 {
-      font-size: 23px;
+      font-size: 25px;
       line-height: 1.05;
       margin-bottom: 8px;
     }
@@ -253,18 +246,18 @@
     .business {
       color: #ef233c;
       font-weight: 900;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .card p {
       color: #ddd;
-      line-height: 1.4;
-      min-height: 58px;
+      line-height: 1.45;
+      font-size: 15px;
     }
 
     .card-bottom {
       margin-top: auto;
-      padding-top: 20px;
+      padding-top: 22px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -282,11 +275,18 @@
       border: none;
       color: #fff;
       padding: 12px 15px;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: 900;
       text-transform: uppercase;
       cursor: pointer;
       font-size: 13px;
+    }
+
+    .small-btn:hover { background: #ff3048; }
+
+    .center {
+      text-align: center;
+      margin-top: 24px;
     }
 
     .features {
@@ -294,7 +294,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       border: 1px solid #252525;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
       background: #101010;
     }
@@ -306,17 +306,17 @@
 
     .feature:last-child { border-right: none; }
 
-    .feature h3 {
-      font-size: 16px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
     .feature span {
       color: #ef233c;
       font-size: 32px;
       display: block;
       margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .feature p {
@@ -331,11 +331,11 @@
     }
 
     .join-box {
-      max-width: 620px;
+      max-width: 650px;
       margin: auto;
       padding: 34px 24px;
       border: 1px solid #252525;
-      border-radius: 12px;
+      border-radius: 14px;
       background: linear-gradient(#111, #0b0b0b);
       box-shadow: 0 18px 40px rgba(0,0,0,.35);
     }
@@ -353,14 +353,15 @@
       line-height: 1.5;
     }
 
-    .giveaway {
+    .claim-box {
       color: #fff;
       background: rgba(239, 35, 60, .12);
       border: 1px solid rgba(239, 35, 60, .5);
       border-radius: 8px;
-      padding: 14px;
+      padding: 15px;
       margin-bottom: 20px;
       font-weight: 900;
+      line-height: 1.4;
     }
 
     form {
@@ -420,14 +421,12 @@
     }
 
     @media (max-width: 1100px) {
-      .deal-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .deal-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 800px) {
       .navbar {
-        height: auto;
         padding: 22px;
         flex-direction: column;
         gap: 18px;
@@ -436,33 +435,21 @@
       nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 18px;
+        gap: 16px;
       }
 
       .hero {
-        grid-template-columns: 1fr;
         text-align: center;
         padding: 54px 22px;
       }
 
-      .hero p,
       .hero-actions {
-        margin-left: auto;
-        margin-right: auto;
         justify-content: center;
       }
 
-      .hero-icons,
       .deal-grid,
       .features {
         grid-template-columns: 1fr;
-      }
-
-      .hero-icons div,
-      .feature {
-        border-left: none;
-        border-right: none;
-        border-top: 1px solid #252525;
       }
 
       .section-top {
@@ -472,6 +459,11 @@
 
       .filters {
         justify-content: center;
+      }
+
+      .feature {
+        border-right: none;
+        border-top: 1px solid #252525;
       }
 
       .card-bottom {
@@ -496,104 +488,105 @@
     </div>
 
     <nav>
-      <a class="active" href="#">Home</a>
+      <a href="#">Home</a>
       <a href="#deals">Deals</a>
       <a href="#how">How It Works</a>
       <a href="#join">Join</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="btn btn-red" href="#join">👥 Join Free</a>
+    <a class="btn btn-red" href="#join">Join Free</a>
   </header>
 
   <section class="hero">
     <div>
       <h1>
-        Exclusive Local Deals.<br>
-        <span>Only for Lawton.</span>
+        Lawton Deals,<br>
+        <span>Freebies & Giveaways.</span>
       </h1>
 
       <p>
-        Get local freebies, discounts, giveaways, tester offers, and special deals from businesses around Lawton.
+        Join free to claim local discounts, tester offers, giveaways, and special deals from Lawton-area businesses.
       </p>
 
       <div class="hero-actions">
         <a class="btn btn-red" href="#join">🎁 Join Free</a>
-        <a class="btn btn-outline" href="#deals">🏷 Browse Deals</a>
+        <a class="btn btn-outline" href="#deals">Browse Deals</a>
       </div>
     </div>
 
-    <div class="hero-icons">
-      <div>
-        <div class="icon">🏷️</div>
-        <strong>Exclusive<br>Offers</strong>
-      </div>
-      <div>
-        <div class="icon">🏪</div>
-        <strong>Support Local<br>Businesses</strong>
-      </div>
-      <div>
-        <div class="icon">🎁</div>
-        <strong>Freebies &<br>Giveaways</strong>
-      </div>
+    <div class="hero-card">
+      <h2>What You Get</h2>
+      <ul>
+        <li>Exclusive local discounts</li>
+        <li>Freebie and giveaway alerts</li>
+        <li>Tester offers for home services</li>
+        <li>Early access before deals fill up</li>
+      </ul>
     </div>
   </section>
 
-  <section id="deals" class="deals">
+  <section id="deals" class="section">
     <div class="section-top">
-      <h2>🔥 Hot Deals This Week</h2>
-      <a href="#join">Join To Claim →</a>
-    </div>
+      <div>
+        <h2>🔥 Featured Local Deals</h2>
+        <p>Click a deal, enter your info, and we’ll send next steps.</p>
+      </div>
 
-    <div class="filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="deal">Deals</button>
-      <button class="filter-btn" data-filter="giveaway">Giveaways</button>
-      <button class="filter-btn" data-filter="tester">Testers</button>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="featured">Featured</button>
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="deal">Deals</button>
+        <button class="filter-btn" data-filter="giveaway">Giveaways</button>
+        <button class="filter-btn" data-filter="tester">Testers</button>
+      </div>
     </div>
 
     <div id="dealGrid" class="deal-grid">
       <div class="loading">Loading local deals...</div>
     </div>
+
+    <div class="center">
+      <button id="viewMoreBtn" class="view-btn">View More Deals</button>
+    </div>
   </section>
 
   <section id="how" class="features">
     <div class="feature">
-      <span>👥</span>
-      <h3>Join Free</h3>
-      <p>Sign up with your name, email, and optional phone number.</p>
+      <span>👆</span>
+      <h3>Pick a Deal</h3>
+      <p>Click claim on the offer you want.</p>
     </div>
 
     <div class="feature">
       <span>📲</span>
-      <h3>Get Alerts</h3>
-      <p>Receive local deals, giveaways, and tester opportunities.</p>
+      <h3>Enter Info</h3>
+      <p>Send your name, email, and optional phone.</p>
     </div>
 
     <div class="feature">
-      <span>🏷️</span>
-      <h3>Claim Deals</h3>
-      <p>Grab limited-time offers before they disappear.</p>
+      <span>✅</span>
+      <h3>We Confirm</h3>
+      <p>You’ll get next steps by text or email.</p>
     </div>
 
     <div class="feature">
       <span>⭐</span>
       <h3>Support Local</h3>
-      <p>Help Lawton businesses grow while saving money.</p>
+      <p>Save money while helping local businesses grow.</p>
     </div>
   </section>
 
   <section id="join" class="join">
     <div class="join-box">
-      <h2>Join Lawton Local Deals</h2>
+      <h2>Claim Your Deal</h2>
 
       <p>
-        Get exclusive Lawton freebies, restaurant deals, service discounts,
-        giveaways, and tester opportunities delivered straight to your inbox.
+        Select a deal above, then enter your info below.
       </p>
 
-      <div class="giveaway">
-        🎁 Join today and get entered for future local giveaways.
+      <div id="selectedDeal" class="claim-box">
+        🎁 Select a deal above or join free for future offers.
       </div>
 
       <form action="https://formspree.io/f/xaqkzqav" method="POST">
@@ -604,13 +597,13 @@
         <input type="hidden" name="source" value="Lawton Local Deals Website">
         <input type="hidden" name="interest" id="interestField" value="General Signup">
 
-        <button type="submit">🎁 Join Free</button>
+        <button type="submit">Submit Claim</button>
       </form>
 
       <div class="trust">
         ✓ Free to join<br>
         ✓ No spam<br>
-        ✓ Unsubscribe anytime
+        ✓ We’ll send deal instructions by text or email
       </div>
     </div>
   </section>
@@ -623,37 +616,54 @@
     const dealGrid = document.getElementById("dealGrid");
     const filterButtons = document.querySelectorAll(".filter-btn");
     const interestField = document.getElementById("interestField");
+    const selectedDeal = document.getElementById("selectedDeal");
+    const viewMoreBtn = document.getElementById("viewMoreBtn");
 
     let allDeals = [];
+    let currentFilter = "featured";
+    let showAllFeatured = false;
+
+    const featuredDealIds = [1, 2, 8, 12, 13, 21];
 
     function formatDate(dateString) {
       if (!dateString) return "Limited time";
-
       const date = new Date(dateString + "T00:00:00");
       if (Number.isNaN(date.getTime())) return dateString;
 
       return date.toLocaleDateString("en-US", {
         month: "short",
-        day: "numeric",
-        year: "numeric"
+        day: "numeric"
       });
     }
 
-    function safeText(value, fallback = "") {
+    function safe(value, fallback = "") {
       return value ? String(value) : fallback;
     }
 
+    function escapeQuotes(text) {
+      return String(text).replace(/'/g, "\\'");
+    }
+
+    function setInterest(title) {
+      interestField.value = title;
+      selectedDeal.innerHTML = "✅ Claiming:<br>" + title + "<br><span style='color:#ccc;font-weight:700;'>Enter your info below and we’ll send next steps.</span>";
+
+      document.getElementById("join").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
     function createDealCard(deal) {
-      const image = safeText(deal.image, "https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=900&q=80");
-      const title = safeText(deal.title, "Local Deal");
-      const business = safeText(deal.business, "Lawton Local Deals");
-      const badge = safeText(deal.badge, "DEAL");
-      const type = safeText(deal.type, "deal");
-      const description = safeText(deal.description, "Join free to learn more about this offer.");
+      const image = safe(deal.image, "https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=900&q=80");
+      const title = safe(deal.title, "Local Deal");
+      const business = safe(deal.business, "Lawton Local Deals");
+      const badge = safe(deal.badge, "DEAL");
+      const type = safe(deal.type, "deal");
+      const description = safe(deal.description, "Join free to learn more about this offer.");
       const expires = formatDate(deal.expires);
 
       return `
-        <div class="card" data-type="${type}">
+        <div class="card">
           <span class="badge">${badge}</span>
           <span class="type">${type}</span>
 
@@ -666,37 +676,49 @@
 
             <div class="card-bottom">
               <span class="expires">⏱ Ends ${expires}</span>
-              <a
-                class="small-btn"
-                href="#join"
-                onclick="setInterest('${title.replace(/'/g, "\\'")}')"
-              >
+              <button class="small-btn" onclick="setInterest('${escapeQuotes(title)}')">
                 Claim Deal
-              </a>
+              </button>
             </div>
           </div>
         </div>
       `;
     }
 
-    function renderDeals(filter = "all") {
+    function getFilteredDeals() {
       const activeDeals = allDeals.filter(deal => deal.active === true);
 
-      const filteredDeals =
-        filter === "all"
-          ? activeDeals
-          : activeDeals.filter(deal => deal.type === filter);
+      if (currentFilter === "featured") {
+        const featured = activeDeals.filter(deal => featuredDealIds.includes(deal.id));
+        return showAllFeatured ? activeDeals.slice(0, 12) : featured;
+      }
 
-      if (!filteredDeals.length) {
+      if (currentFilter === "all") {
+        return showAllFeatured ? activeDeals : activeDeals.slice(0, 12);
+      }
+
+      const filtered = activeDeals.filter(deal => deal.type === currentFilter);
+      return showAllFeatured ? filtered : filtered.slice(0, 9);
+    }
+
+    function renderDeals() {
+      const deals = getFilteredDeals();
+
+      if (!deals.length) {
         dealGrid.innerHTML = `<div class="empty">No active offers in this category yet.</div>`;
+        viewMoreBtn.style.display = "none";
         return;
       }
 
-      dealGrid.innerHTML = filteredDeals.map(createDealCard).join("");
-    }
+      dealGrid.innerHTML = deals.map(createDealCard).join("");
 
-    function setInterest(title) {
-      interestField.value = title;
+      if (currentFilter === "featured") {
+        viewMoreBtn.textContent = showAllFeatured ? "Show Featured Only" : "View More Deals";
+      } else {
+        viewMoreBtn.textContent = showAllFeatured ? "Show Less" : "View More";
+      }
+
+      viewMoreBtn.style.display = "inline-block";
     }
 
     async function loadDeals() {
@@ -708,7 +730,7 @@
         }
 
         allDeals = await response.json();
-        renderDeals("all");
+        renderDeals();
       } catch (error) {
         console.error(error);
         dealGrid.innerHTML = `
@@ -716,6 +738,7 @@
             Deals are being updated. Check back soon or join the list below.
           </div>
         `;
+        viewMoreBtn.style.display = "none";
       }
     }
 
@@ -723,8 +746,16 @@
       button.addEventListener("click", () => {
         filterButtons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
-        renderDeals(button.dataset.filter);
+
+        currentFilter = button.dataset.filter;
+        showAllFeatured = false;
+        renderDeals();
       });
+    });
+
+    viewMoreBtn.addEventListener("click", () => {
+      showAllFeatured = !showAllFeatured;
+      renderDeals();
     });
 
     loadDeals();
