@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lawton Local Deals brings exclusive local freebies, discounts, giveaways, tester offers, and special deals to Lawton, Oklahoma." />
+
   <title>Lawton Local Deals | Freebies, Discounts & Local Offers</title>
+  <meta name="description" content="Join Lawton Local Deals for local freebies, discounts, giveaways, tester offers, and special deals in Lawton, Oklahoma." />
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,7 +44,7 @@
 
     nav {
       display: flex;
-      gap: 34px;
+      gap: 28px;
       text-transform: uppercase;
       font-size: 14px;
       font-weight: 800;
@@ -72,7 +73,7 @@
     }
 
     .hero {
-      min-height: 420px;
+      min-height: 430px;
       padding: 70px 58px;
       display: grid;
       grid-template-columns: 1.2fr 1fr;
@@ -123,7 +124,6 @@
 
     .hero-icons .icon {
       font-size: 44px;
-      color: #ef233c;
       margin-bottom: 12px;
     }
 
@@ -135,7 +135,7 @@
 
     .deals {
       margin: 0 24px;
-      padding: 26px 18px 18px;
+      padding: 28px 18px 22px;
       border: 1px solid #252525;
       border-radius: 10px;
       background: linear-gradient(#111, #0b0b0b);
@@ -145,7 +145,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       gap: 16px;
     }
 
@@ -161,6 +161,31 @@
       font-size: 14px;
     }
 
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .filter-btn {
+      background: #181818;
+      color: #fff;
+      border: 1px solid #333;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-weight: 900;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: #ef233c;
+      border-color: #ef233c;
+    }
+
     .deal-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -174,6 +199,8 @@
       overflow: hidden;
       position: relative;
       box-shadow: 0 10px 25px rgba(0,0,0,.3);
+      display: flex;
+      flex-direction: column;
     }
 
     .card img {
@@ -191,15 +218,34 @@
       background: #ef233c;
       padding: 10px 16px;
       border-radius: 4px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 900;
       z-index: 2;
     }
 
-    .card-body { padding: 18px; }
+    .type {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(0,0,0,.75);
+      border: 1px solid #444;
+      padding: 8px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    .card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
 
     .card h3 {
-      font-size: 24px;
+      font-size: 23px;
       line-height: 1.05;
       margin-bottom: 8px;
     }
@@ -217,7 +263,8 @@
     }
 
     .card-bottom {
-      margin-top: 20px;
+      margin-top: auto;
+      padding-top: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -239,6 +286,7 @@
       font-weight: 900;
       text-transform: uppercase;
       cursor: pointer;
+      font-size: 13px;
     }
 
     .features {
@@ -259,7 +307,6 @@
     .feature:last-child { border-right: none; }
 
     .feature h3 {
-      color: #fff;
       font-size: 16px;
       text-transform: uppercase;
       margin-bottom: 8px;
@@ -362,7 +409,23 @@
       border-top: 1px solid #222;
     }
 
-    @media (max-width: 1000px) {
+    .loading,
+    .empty {
+      color: #bbb;
+      padding: 30px;
+      text-align: center;
+      border: 1px dashed #333;
+      border-radius: 8px;
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 1100px) {
+      .deal-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 800px) {
       .navbar {
         height: auto;
         padding: 22px;
@@ -407,6 +470,10 @@
         text-align: center;
       }
 
+      .filters {
+        justify-content: center;
+      }
+
       .card-bottom {
         flex-direction: column;
         align-items: stretch;
@@ -414,6 +481,7 @@
 
       .small-btn {
         width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -477,64 +545,15 @@
       <a href="#join">Join To Claim →</a>
     </div>
 
-    <div class="deal-grid">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="deal">Deals</button>
+      <button class="filter-btn" data-filter="giveaway">Giveaways</button>
+      <button class="filter-btn" data-filter="tester">Testers</button>
+    </div>
 
-      <div class="card">
-        <span class="badge">FREE</span>
-        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=900&q=80" alt="Iced coffee">
-        <div class="card-body">
-          <h3>Free Iced Coffee</h3>
-          <div class="business">Local Coffee Deal</div>
-          <p>Join the list to hear about coffee freebies and limited local giveaways.</p>
-          <div class="card-bottom">
-            <span class="expires">⏱ Limited spots</span>
-            <a class="small-btn" href="#join">Claim Deal</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="badge">$99</span>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Clean living room">
-        <div class="card-body">
-          <h3>$99 Home Clean</h3>
-          <div class="business">Red Prairie Cleaning</div>
-          <p>Limited-time home cleaning offers for Lawton Local Deals members.</p>
-          <div class="card-bottom">
-            <span class="expires">⏱ Member deal</span>
-            <a class="small-btn" href="#join">View Deal</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="badge">FREE</span>
-        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80" alt="Pressure washing">
-        <div class="card-body">
-          <h3>Free Pressure Wash Test Spot</h3>
-          <div class="business">Redleg Home Services</div>
-          <p>Get alerts for home service tester offers, discounts, and giveaways.</p>
-          <div class="card-bottom">
-            <span class="expires">⏱ Tester offer</span>
-            <a class="small-btn" href="#join">Claim Deal</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="badge">FREE</span>
-        <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=80" alt="Tacos">
-        <div class="card-body">
-          <h3>Restaurant Freebies</h3>
-          <div class="business">Lawton Food Deals</div>
-          <p>Be first to know when local restaurants run freebie or discount promos.</p>
-          <div class="card-bottom">
-            <span class="expires">⏱ Coming soon</span>
-            <a class="small-btn" href="#join">Join Free</a>
-          </div>
-        </div>
-      </div>
-
+    <div id="dealGrid" class="deal-grid">
+      <div class="loading">Loading local deals...</div>
     </div>
   </section>
 
@@ -578,35 +597,14 @@
       </div>
 
       <form action="https://formspree.io/f/xaqkzqav" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number (Optional)">
 
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-        >
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          required
-        >
-
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number (Optional)"
-        >
-
-        <input
-          type="hidden"
-          name="source"
-          value="Lawton Local Deals Website"
-        >
+        <input type="hidden" name="source" value="Lawton Local Deals Website">
+        <input type="hidden" name="interest" id="interestField" value="General Signup">
 
         <button type="submit">🎁 Join Free</button>
-
       </form>
 
       <div class="trust">
@@ -620,6 +618,117 @@
   <footer id="contact">
     © 2026 Lawton Local Deals. Built for Lawton, Oklahoma.
   </footer>
+
+  <script>
+    const dealGrid = document.getElementById("dealGrid");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const interestField = document.getElementById("interestField");
+
+    let allDeals = [];
+
+    function formatDate(dateString) {
+      if (!dateString) return "Limited time";
+
+      const date = new Date(dateString + "T00:00:00");
+      if (Number.isNaN(date.getTime())) return dateString;
+
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      });
+    }
+
+    function safeText(value, fallback = "") {
+      return value ? String(value) : fallback;
+    }
+
+    function createDealCard(deal) {
+      const image = safeText(deal.image, "https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=900&q=80");
+      const title = safeText(deal.title, "Local Deal");
+      const business = safeText(deal.business, "Lawton Local Deals");
+      const badge = safeText(deal.badge, "DEAL");
+      const type = safeText(deal.type, "deal");
+      const description = safeText(deal.description, "Join free to learn more about this offer.");
+      const expires = formatDate(deal.expires);
+
+      return `
+        <div class="card" data-type="${type}">
+          <span class="badge">${badge}</span>
+          <span class="type">${type}</span>
+
+          <img src="${image}" alt="${title}" loading="lazy">
+
+          <div class="card-body">
+            <h3>${title}</h3>
+            <div class="business">${business}</div>
+            <p>${description}</p>
+
+            <div class="card-bottom">
+              <span class="expires">⏱ Ends ${expires}</span>
+              <a
+                class="small-btn"
+                href="#join"
+                onclick="setInterest('${title.replace(/'/g, "\\'")}')"
+              >
+                Claim Deal
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderDeals(filter = "all") {
+      const activeDeals = allDeals.filter(deal => deal.active === true);
+
+      const filteredDeals =
+        filter === "all"
+          ? activeDeals
+          : activeDeals.filter(deal => deal.type === filter);
+
+      if (!filteredDeals.length) {
+        dealGrid.innerHTML = `<div class="empty">No active offers in this category yet.</div>`;
+        return;
+      }
+
+      dealGrid.innerHTML = filteredDeals.map(createDealCard).join("");
+    }
+
+    function setInterest(title) {
+      interestField.value = title;
+    }
+
+    async function loadDeals() {
+      try {
+        const response = await fetch("deals.json", { cache: "no-store" });
+
+        if (!response.ok) {
+          throw new Error("Could not load deals.json");
+        }
+
+        allDeals = await response.json();
+        renderDeals("all");
+      } catch (error) {
+        console.error(error);
+        dealGrid.innerHTML = `
+          <div class="empty">
+            Deals are being updated. Check back soon or join the list below.
+          </div>
+        `;
+      }
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderDeals(button.dataset.filter);
+      });
+    });
+
+    loadDeals();
+  </script>
 
 </body>
 </html>
