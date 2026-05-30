@@ -1,5 +1,22 @@
 [
   {
+  "id": 27,
+  "type": "giveaway",
+  "category": "giveaway",
+  "featured": true,
+  "title": "Win a $100 Visa Gift Card",
+  "business": "Lawton Local Deals",
+  "badge": "$100",
+  "description": "Join Lawton Local Deals for a chance to win a $100 Visa Gift Card. Winner announced when we reach our first 100 members.",
+  "spots": 1,
+  "claimed": 0,
+  "expires": "2026-07-31",
+  "image": "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=900&q=80",
+  "website": "https://lawtonlocaldeals.com",
+  "phone": "",
+  "active": true
+  }
+  {
     "id": 1,
     "type": "giveaway",
     "category": "giveaway",
