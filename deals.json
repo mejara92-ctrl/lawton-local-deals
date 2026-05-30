@@ -1,0 +1,254 @@
+```json
+[
+  {
+    "id": 1,
+    "type": "giveaway",
+    "title": "Win a Free House Cleaning",
+    "business": "Red Prairie Cleaning",
+    "badge": "FREE",
+    "description": "Enter for a chance to win a free house cleaning.",
+    "expires": "2026-07-31",
+    "active": true
+  },
+  {
+    "id": 2,
+    "type": "deal",
+    "title": "$99 House Cleaning",
+    "business": "Red Prairie Cleaning",
+    "badge": "$99",
+    "description": "Limited-time house cleaning offer for members.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 3,
+    "type": "deal",
+    "title": "Free Fridge Cleaning Add-On",
+    "business": "Red Prairie Cleaning",
+    "badge": "FREE",
+    "description": "Free refrigerator cleaning with any booked service.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 4,
+    "type": "deal",
+    "title": "Free Oven Cleaning Add-On",
+    "business": "Red Prairie Cleaning",
+    "badge": "FREE",
+    "description": "Free oven cleaning with qualifying service.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 5,
+    "type": "deal",
+    "title": "$50 Off Deep Cleaning",
+    "business": "Red Prairie Cleaning",
+    "badge": "$50 OFF",
+    "description": "Save $50 on a deep cleaning service.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 6,
+    "type": "deal",
+    "title": "Free Pet Odor Evaluation",
+    "business": "Red Prairie Cleaning",
+    "badge": "FREE",
+    "description": "Free assessment of pet odor issues in your home.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 7,
+    "type": "giveaway",
+    "title": "Win a Free Carpet Cleaning",
+    "business": "Red Prairie Cleaning",
+    "badge": "FREE",
+    "description": "Enter to win carpet cleaning for up to 3 rooms.",
+    "expires": "2026-07-31",
+    "active": true
+  },
+  {
+    "id": 8,
+    "type": "deal",
+    "title": "$100 Off Move-Out Cleaning",
+    "business": "Deposit Defense",
+    "badge": "$100 OFF",
+    "description": "Exclusive member savings on move-out cleaning.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 9,
+    "type": "deal",
+    "title": "Free Deposit Risk Assessment",
+    "business": "Deposit Defense",
+    "badge": "FREE",
+    "description": "Learn what may cost you your deposit before moving.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 10,
+    "type": "deal",
+    "title": "Free Move-Out Checklist",
+    "business": "Deposit Defense",
+    "badge": "FREE",
+    "description": "Professional move-out checklist for renters.",
+    "expires": "2026-12-31",
+    "active": true
+  },
+  {
+    "id": 11,
+    "type": "deal",
+    "title": "Free Carpet Inspection",
+    "business": "Deposit Defense",
+    "badge": "FREE",
+    "description": "Find out if carpet cleaning is needed before moving.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 12,
+    "type": "deal",
+    "title": "Free Pressure Wash Test Spot",
+    "business": "Redleg Home Services",
+    "badge": "FREE",
+    "description": "Try a free driveway, patio, or sidewalk test spot.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 13,
+    "type": "deal",
+    "title": "Free Garage Makeover Consultation",
+    "business": "Redleg Home Services",
+    "badge": "FREE",
+    "description": "Ideas, pricing, and planning for your garage.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 14,
+    "type": "deal",
+    "title": "Free Garage Organization Plan",
+    "business": "Redleg Home Services",
+    "badge": "FREE",
+    "description": "Get a custom garage organization strategy.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 15,
+    "type": "deal",
+    "title": "$100 Off Interior Painting",
+    "business": "Redleg Home Services",
+    "badge": "$100 OFF",
+    "description": "Save on interior painting projects.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 16,
+    "type": "deal",
+    "title": "Free Fence Stain Test Area",
+    "business": "Redleg Home Services",
+    "badge": "FREE",
+    "description": "See how your fence looks before committing.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 17,
+    "type": "deal",
+    "title": "Free Junk Removal Estimate",
+    "business": "Redleg Home Services",
+    "badge": "FREE",
+    "description": "No-obligation quote for cleanouts and junk removal.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 18,
+    "type": "giveaway",
+    "title": "Win a Garage Refresh Package",
+    "business": "Redleg Home Services",
+    "badge": "FREE",
+    "description": "Enter to win a garage organization makeover.",
+    "expires": "2026-07-31",
+    "active": true
+  },
+  {
+    "id": 19,
+    "type": "tester",
+    "title": "Garage Makeover Testers Needed",
+    "business": "Redleg Home Services",
+    "badge": "TESTER",
+    "description": "Seeking 3 homeowners for discounted before-and-after projects.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 20,
+    "type": "tester",
+    "title": "Pressure Washing Testers Needed",
+    "business": "Redleg Home Services",
+    "badge": "TESTER",
+    "description": "Seeking driveways and patios for photos and videos.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 21,
+    "type": "deal",
+    "title": "Free Website Audit",
+    "business": "Zyvara Services",
+    "badge": "FREE",
+    "description": "See how your website compares to competitors.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 22,
+    "type": "deal",
+    "title": "Free Google Business Profile Audit",
+    "business": "Zyvara Services",
+    "badge": "FREE",
+    "description": "Find opportunities to rank higher locally.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 23,
+    "type": "deal",
+    "title": "Free AI Automation Review",
+    "business": "Zyvara Services",
+    "badge": "FREE",
+    "description": "Discover simple automations that save time.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 24,
+    "type": "deal",
+    "title": "Free Lead Response Audit",
+    "business": "Zyvara Services",
+    "badge": "FREE",
+    "description": "See how many leads your business may be losing.",
+    "expires": "2026-06-30",
+    "active": true
+  },
+  {
+    "id": 25,
+    "type": "tester",
+    "title": "Business Website Testers Needed",
+    "business": "Zyvara Services",
+    "badge": "TESTER",
+    "description": "Looking for 3 businesses to test new website packages.",
+    "expires": "2026-06-30",
+    "active": true
+  }
+]
+```
