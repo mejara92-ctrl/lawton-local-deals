@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lawton Local Deals</title>
+  <meta name="description" content="Lawton Local Deals brings exclusive local freebies, discounts, giveaways, tester offers, and special deals to Lawton, Oklahoma." />
+  <title>Lawton Local Deals | Freebies, Discounts & Local Offers</title>
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +20,7 @@
     a { color: inherit; text-decoration: none; }
 
     .navbar {
-      height: 92px;
+      min-height: 92px;
       background: #030303;
       display: flex;
       align-items: center;
@@ -36,7 +39,6 @@
       letter-spacing: 1px;
     }
 
-    .logo span { color: #fff; }
     .logo b { color: #ef233c; }
 
     nav {
@@ -48,9 +50,7 @@
     }
 
     nav a:hover,
-    nav a.active {
-      color: #ef233c;
-    }
+    nav a.active { color: #ef233c; }
 
     .btn {
       display: inline-block;
@@ -72,8 +72,8 @@
     }
 
     .hero {
-      min-height: 360px;
-      padding: 58px 58px;
+      min-height: 420px;
+      padding: 70px 58px;
       display: grid;
       grid-template-columns: 1.2fr 1fr;
       align-items: center;
@@ -86,21 +86,19 @@
     }
 
     .hero h1 {
-      font-size: clamp(38px, 5vw, 58px);
+      font-size: clamp(38px, 5vw, 62px);
       line-height: 1.05;
       text-transform: uppercase;
       margin-bottom: 22px;
       letter-spacing: 1px;
     }
 
-    .hero h1 span {
-      color: #ef233c;
-    }
+    .hero h1 span { color: #ef233c; }
 
     .hero p {
       font-size: 20px;
       color: #ddd;
-      max-width: 600px;
+      max-width: 640px;
       line-height: 1.5;
       margin-bottom: 30px;
     }
@@ -141,7 +139,6 @@
       border: 1px solid #252525;
       border-radius: 10px;
       background: linear-gradient(#111, #0b0b0b);
-      transform: translateY(-1px);
     }
 
     .section-top {
@@ -149,6 +146,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 22px;
+      gap: 16px;
     }
 
     .section-top h2 {
@@ -198,9 +196,7 @@
       z-index: 2;
     }
 
-    .card-body {
-      padding: 18px;
-    }
+    .card-body { padding: 18px; }
 
     .card h3 {
       font-size: 24px;
@@ -282,21 +278,42 @@
     }
 
     .join {
-      padding: 70px 24px;
+      padding: 74px 24px;
       text-align: center;
       background: #080808;
     }
 
+    .join-box {
+      max-width: 620px;
+      margin: auto;
+      padding: 34px 24px;
+      border: 1px solid #252525;
+      border-radius: 12px;
+      background: linear-gradient(#111, #0b0b0b);
+      box-shadow: 0 18px 40px rgba(0,0,0,.35);
+    }
+
     .join h2 {
-      font-size: 40px;
+      font-size: clamp(32px, 4vw, 44px);
       margin-bottom: 10px;
       text-transform: uppercase;
     }
 
     .join p {
       color: #ccc;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
       font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .giveaway {
+      color: #fff;
+      background: rgba(239, 35, 60, .12);
+      border: 1px solid rgba(239, 35, 60, .5);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 20px;
+      font-weight: 900;
     }
 
     form {
@@ -315,6 +332,8 @@
       font-size: 16px;
     }
 
+    input::placeholder { color: #999; }
+
     form button {
       padding: 16px;
       border-radius: 6px;
@@ -325,6 +344,15 @@
       text-transform: uppercase;
       font-size: 15px;
       cursor: pointer;
+    }
+
+    form button:hover { background: #ff3048; }
+
+    .trust {
+      margin-top: 18px;
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.7;
     }
 
     footer {
@@ -351,7 +379,7 @@
       .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding: 48px 22px;
+        padding: 54px 22px;
       }
 
       .hero p,
@@ -372,6 +400,20 @@
         border-left: none;
         border-right: none;
         border-top: 1px solid #252525;
+      }
+
+      .section-top {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card-bottom {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .small-btn {
+        width: 100%;
       }
     }
   </style>
@@ -404,11 +446,11 @@
       </h1>
 
       <p>
-        Freebies, discounts, test offers, and special deals from local businesses you love.
+        Get local freebies, discounts, giveaways, tester offers, and special deals from businesses around Lawton.
       </p>
 
       <div class="hero-actions">
-        <a class="btn btn-red" href="#join">👥 Join the Community</a>
+        <a class="btn btn-red" href="#join">🎁 Join Free</a>
         <a class="btn btn-outline" href="#deals">🏷 Browse Deals</a>
       </div>
     </div>
@@ -432,7 +474,7 @@
   <section id="deals" class="deals">
     <div class="section-top">
       <h2>🔥 Hot Deals This Week</h2>
-      <a href="#deals">View All Deals →</a>
+      <a href="#join">Join To Claim →</a>
     </div>
 
     <div class="deal-grid">
@@ -442,11 +484,11 @@
         <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=900&q=80" alt="Iced coffee">
         <div class="card-body">
           <h3>Free Iced Coffee</h3>
-          <div class="business">Lawton Coffee Co.</div>
-          <p>First 25 members get a FREE iced coffee this Saturday.</p>
+          <div class="business">Local Coffee Deal</div>
+          <p>Join the list to hear about coffee freebies and limited local giveaways.</p>
           <div class="card-bottom">
-            <span class="expires">⏱ Ends May 25</span>
-            <button class="small-btn">Claim Deal</button>
+            <span class="expires">⏱ Limited spots</span>
+            <a class="small-btn" href="#join">Claim Deal</a>
           </div>
         </div>
       </div>
@@ -457,10 +499,10 @@
         <div class="card-body">
           <h3>$99 Home Clean</h3>
           <div class="business">Red Prairie Cleaning</div>
-          <p>Limited-time home cleaning offer for Lawton Local Deals members.</p>
+          <p>Limited-time home cleaning offers for Lawton Local Deals members.</p>
           <div class="card-bottom">
-            <span class="expires">⏱ Ends May 31</span>
-            <button class="small-btn">View Deal</button>
+            <span class="expires">⏱ Member deal</span>
+            <a class="small-btn" href="#join">View Deal</a>
           </div>
         </div>
       </div>
@@ -471,10 +513,10 @@
         <div class="card-body">
           <h3>Free Pressure Wash Test Spot</h3>
           <div class="business">Redleg Home Services</div>
-          <p>Get a free test spot on your driveway, patio, fence, or walkway.</p>
+          <p>Get alerts for home service tester offers, discounts, and giveaways.</p>
           <div class="card-bottom">
-            <span class="expires">⏱ Ends May 27</span>
-            <button class="small-btn">Claim Deal</button>
+            <span class="expires">⏱ Tester offer</span>
+            <a class="small-btn" href="#join">Claim Deal</a>
           </div>
         </div>
       </div>
@@ -483,12 +525,12 @@
         <span class="badge">FREE</span>
         <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=80" alt="Tacos">
         <div class="card-body">
-          <h3>Free Appetizer</h3>
-          <div class="business">El Chico Cafe</div>
-          <p>Get a free appetizer with the purchase of two entrees.</p>
+          <h3>Restaurant Freebies</h3>
+          <div class="business">Lawton Food Deals</div>
+          <p>Be first to know when local restaurants run freebie or discount promos.</p>
           <div class="card-bottom">
-            <span class="expires">⏱ Ends May 30</span>
-            <button class="small-btn">View Deal</button>
+            <span class="expires">⏱ Coming soon</span>
+            <a class="small-btn" href="#join">Join Free</a>
           </div>
         </div>
       </div>
@@ -499,39 +541,80 @@
   <section id="how" class="features">
     <div class="feature">
       <span>👥</span>
-      <h3>Local Community</h3>
-      <p>Supporting Lawton one deal at a time.</p>
-    </div>
-
-    <div class="feature">
-      <span>🛡️</span>
-      <h3>Trusted Businesses</h3>
-      <p>Deals from local businesses and service providers.</p>
-    </div>
-
-    <div class="feature">
-      <span>⭐</span>
-      <h3>Exclusive Access</h3>
-      <p>Special offers you won’t find anywhere else.</p>
+      <h3>Join Free</h3>
+      <p>Sign up with your name, email, and optional phone number.</p>
     </div>
 
     <div class="feature">
       <span>📲</span>
-      <h3>Stay Updated</h3>
-      <p>Join free and never miss a local deal again.</p>
+      <h3>Get Alerts</h3>
+      <p>Receive local deals, giveaways, and tester opportunities.</p>
+    </div>
+
+    <div class="feature">
+      <span>🏷️</span>
+      <h3>Claim Deals</h3>
+      <p>Grab limited-time offers before they disappear.</p>
+    </div>
+
+    <div class="feature">
+      <span>⭐</span>
+      <h3>Support Local</h3>
+      <p>Help Lawton businesses grow while saving money.</p>
     </div>
   </section>
 
   <section id="join" class="join">
-    <h2>Join Lawton Local Deals</h2>
-    <p>Get freebies, discounts, tester offers, and local deals sent to you.</p>
+    <div class="join-box">
+      <h2>Join Lawton Local Deals</h2>
 
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <button type="submit">Join Free</button>
-    </form>
+      <p>
+        Get exclusive Lawton freebies, restaurant deals, service discounts,
+        giveaways, and tester opportunities delivered straight to your inbox.
+      </p>
+
+      <div class="giveaway">
+        🎁 Join today and get entered for future local giveaways.
+      </div>
+
+      <form action="https://formspree.io/f/xaqkzqav" method="POST">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        >
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number (Optional)"
+        >
+
+        <input
+          type="hidden"
+          name="source"
+          value="Lawton Local Deals Website"
+        >
+
+        <button type="submit">🎁 Join Free</button>
+
+      </form>
+
+      <div class="trust">
+        ✓ Free to join<br>
+        ✓ No spam<br>
+        ✓ Unsubscribe anytime
+      </div>
+    </div>
   </section>
 
   <footer id="contact">
