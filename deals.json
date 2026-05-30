@@ -1,4 +1,3 @@
-```json
 [
   {
     "id": 1,
@@ -6,8 +5,9 @@
     "title": "Win a Free House Cleaning",
     "business": "Red Prairie Cleaning",
     "badge": "FREE",
-    "description": "Enter for a chance to win a free house cleaning.",
+    "description": "Enter for a chance to win a free house cleaning from Red Prairie Cleaning.",
     "expires": "2026-07-31",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -16,8 +16,9 @@
     "title": "$99 House Cleaning",
     "business": "Red Prairie Cleaning",
     "badge": "$99",
-    "description": "Limited-time house cleaning offer for members.",
+    "description": "Limited-time house cleaning offer for Lawton Local Deals members.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -26,8 +27,9 @@
     "title": "Free Fridge Cleaning Add-On",
     "business": "Red Prairie Cleaning",
     "badge": "FREE",
-    "description": "Free refrigerator cleaning with any booked service.",
+    "description": "Get a free fridge cleaning add-on with any qualifying booked cleaning.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -36,8 +38,9 @@
     "title": "Free Oven Cleaning Add-On",
     "business": "Red Prairie Cleaning",
     "badge": "FREE",
-    "description": "Free oven cleaning with qualifying service.",
+    "description": "Get a free oven cleaning add-on with any qualifying booked cleaning.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -46,8 +49,9 @@
     "title": "$50 Off Deep Cleaning",
     "business": "Red Prairie Cleaning",
     "badge": "$50 OFF",
-    "description": "Save $50 on a deep cleaning service.",
+    "description": "Save $50 on a deep cleaning service for your home.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -56,8 +60,9 @@
     "title": "Free Pet Odor Evaluation",
     "business": "Red Prairie Cleaning",
     "badge": "FREE",
-    "description": "Free assessment of pet odor issues in your home.",
+    "description": "Get a free pet odor evaluation before booking carpet or cleaning service.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -68,6 +73,7 @@
     "badge": "FREE",
     "description": "Enter to win carpet cleaning for up to 3 rooms.",
     "expires": "2026-07-31",
+    "image": "https://images.unsplash.com/photo-1527693975569-6be1d08e38f9?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -76,8 +82,9 @@
     "title": "$100 Off Move-Out Cleaning",
     "business": "Deposit Defense",
     "badge": "$100 OFF",
-    "description": "Exclusive member savings on move-out cleaning.",
+    "description": "Exclusive member savings on move-out cleaning packages.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -86,8 +93,9 @@
     "title": "Free Deposit Risk Assessment",
     "business": "Deposit Defense",
     "badge": "FREE",
-    "description": "Learn what may cost you your deposit before moving.",
+    "description": "Get a free review of what may cost you your rental deposit before moving out.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -96,8 +104,9 @@
     "title": "Free Move-Out Checklist",
     "business": "Deposit Defense",
     "badge": "FREE",
-    "description": "Professional move-out checklist for renters.",
+    "description": "Get a professional move-out checklist to help avoid missed cleaning items.",
     "expires": "2026-12-31",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -106,8 +115,9 @@
     "title": "Free Carpet Inspection",
     "business": "Deposit Defense",
     "badge": "FREE",
-    "description": "Find out if carpet cleaning is needed before moving.",
+    "description": "Find out if your carpet may need cleaning before your move-out inspection.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -116,8 +126,9 @@
     "title": "Free Pressure Wash Test Spot",
     "business": "Redleg Home Services",
     "badge": "FREE",
-    "description": "Try a free driveway, patio, or sidewalk test spot.",
+    "description": "Try a free test spot on your driveway, sidewalk, patio, or fence.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -126,8 +137,9 @@
     "title": "Free Garage Makeover Consultation",
     "business": "Redleg Home Services",
     "badge": "FREE",
-    "description": "Ideas, pricing, and planning for your garage.",
+    "description": "Get ideas, pricing, and a plan for upgrading your garage.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -136,8 +148,9 @@
     "title": "Free Garage Organization Plan",
     "business": "Redleg Home Services",
     "badge": "FREE",
-    "description": "Get a custom garage organization strategy.",
+    "description": "Get a custom garage organization strategy for your space.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -146,8 +159,9 @@
     "title": "$100 Off Interior Painting",
     "business": "Redleg Home Services",
     "badge": "$100 OFF",
-    "description": "Save on interior painting projects.",
+    "description": "Save $100 on qualifying interior painting projects.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -156,8 +170,9 @@
     "title": "Free Fence Stain Test Area",
     "business": "Redleg Home Services",
     "badge": "FREE",
-    "description": "See how your fence looks before committing.",
+    "description": "See how your fence could look with a free stain test area.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -166,8 +181,9 @@
     "title": "Free Junk Removal Estimate",
     "business": "Redleg Home Services",
     "badge": "FREE",
-    "description": "No-obligation quote for cleanouts and junk removal.",
+    "description": "Get a no-obligation estimate for junk removal, cleanouts, or haul-away jobs.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -176,8 +192,9 @@
     "title": "Win a Garage Refresh Package",
     "business": "Redleg Home Services",
     "badge": "FREE",
-    "description": "Enter to win a garage organization makeover.",
+    "description": "Enter to win a garage refresh package from Redleg Home Services.",
     "expires": "2026-07-31",
+    "image": "https://images.unsplash.com/photo-1597001443597-0d00a7a2fb65?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -186,8 +203,9 @@
     "title": "Garage Makeover Testers Needed",
     "business": "Redleg Home Services",
     "badge": "TESTER",
-    "description": "Seeking 3 homeowners for discounted before-and-after projects.",
+    "description": "Looking for 3 homeowners for discounted garage makeover before-and-after projects.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1597001443597-0d00a7a2fb65?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -196,8 +214,9 @@
     "title": "Pressure Washing Testers Needed",
     "business": "Redleg Home Services",
     "badge": "TESTER",
-    "description": "Seeking driveways and patios for photos and videos.",
+    "description": "Looking for driveways, patios, and sidewalks for pressure washing photos and videos.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -206,8 +225,9 @@
     "title": "Free Website Audit",
     "business": "Zyvara Services",
     "badge": "FREE",
-    "description": "See how your website compares to competitors.",
+    "description": "See how your website compares to local competitors and what could be improved.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -216,8 +236,9 @@
     "title": "Free Google Business Profile Audit",
     "business": "Zyvara Services",
     "badge": "FREE",
-    "description": "Find opportunities to rank higher locally.",
+    "description": "Find opportunities to improve your Google Business Profile and local visibility.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -226,8 +247,9 @@
     "title": "Free AI Automation Review",
     "business": "Zyvara Services",
     "badge": "FREE",
-    "description": "Discover simple automations that save time.",
+    "description": "Discover simple automations that could save your business time and missed follow-ups.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -236,8 +258,9 @@
     "title": "Free Lead Response Audit",
     "business": "Zyvara Services",
     "badge": "FREE",
-    "description": "See how many leads your business may be losing.",
+    "description": "See how many leads your business may be losing from slow or inconsistent follow-up.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
     "active": true
   },
   {
@@ -246,9 +269,9 @@
     "title": "Business Website Testers Needed",
     "business": "Zyvara Services",
     "badge": "TESTER",
-    "description": "Looking for 3 businesses to test new website packages.",
+    "description": "Looking for 3 local businesses to test new website and lead capture packages.",
     "expires": "2026-06-30",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
     "active": true
   }
 ]
-```
